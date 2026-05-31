@@ -1,0 +1,212 @@
+# indiekit-plugin-registry
+#
+# Central catalog of Indiekit plugins consumed by indiekit-cloudron and
+# indiekit-deploy as a git submodule. See README.md for the bump workflow.
+#
+# Tier semantics:
+#   core         — always installed and loaded; cannot be disabled per-site
+#   post_types   — content type plugins; per-site can enable/disable
+#   syndicators  — cross-posting targets; per-site can enable/disable
+#   endpoints    — feature endpoints; per-site can enable/disable
+#
+# Entry fields:
+#   key              — short identifier used in sites/*/config/plugins.yaml (kebab-case)
+#   package          — npm package name (@scope/name)
+#   version          — semver range (omitted when `overridden: true`)
+#   overridden       — package.json `overrides` field swaps this for an @rmdes/* fork
+#   default_enabled  — whether this is on by default when a site doesn't list it
+#   feature_flag     — whether Site Config's Features tab should expose a toggle
+
+# Core — always installed and loaded; cannot be disabled per-site
+core:
+  - key: site-config
+    package: "@rmdes/indiekit-endpoint-site-config"
+    version: "^1.0.0-beta.2"
+  - key: startup-gate
+    package: "@rmdes/indiekit-startup-gate"
+    version: "^1.0.0"
+  - key: auth
+    package: "@indiekit/endpoint-auth"
+    overridden: true   # package.json `overrides` swaps in @rmdes/indiekit-endpoint-auth
+  - key: posts
+    package: "@indiekit/endpoint-posts"
+    overridden: true
+  - key: micropub
+    package: "@indiekit/endpoint-micropub"
+    overridden: true
+  - key: syndicate
+    package: "@indiekit/endpoint-syndicate"
+    overridden: true
+  - key: files
+    package: "@indiekit/endpoint-files"
+    overridden: true
+  - key: share
+    package: "@indiekit/endpoint-share"
+    overridden: true
+  - key: frontend
+    package: "@indiekit/frontend"
+    overridden: true
+  - key: preset-eleventy
+    package: "@rmdes/indiekit-preset-eleventy"
+    version: "^1.0.0-beta.38"
+  - key: store-file-system
+    package: "@indiekit/store-file-system"
+    version: "^1.0.0"
+  - key: post-type-page
+    package: "@rmdes/indiekit-post-type-page"
+    version: "^1.0.4"
+  - key: json-feed
+    package: "@indiekit/endpoint-json-feed"
+    version: "^1.0.0"
+
+post_types:
+  - key: article
+    package: "@indiekit/post-type-article"
+    default_enabled: true
+  - key: note
+    package: "@indiekit/post-type-note"
+    default_enabled: true
+  - key: photo
+    package: "@indiekit/post-type-photo"
+    default_enabled: true
+  - key: bookmark
+    package: "@indiekit/post-type-bookmark"
+    default_enabled: true
+  - key: reply
+    package: "@indiekit/post-type-reply"
+    default_enabled: true
+  - key: repost
+    package: "@indiekit/post-type-repost"
+    default_enabled: true
+  - key: like
+    package: "@indiekit/post-type-like"
+    default_enabled: true
+  - key: video
+    package: "@indiekit/post-type-video"
+    default_enabled: true
+  - key: audio
+    package: "@indiekit/post-type-audio"
+    default_enabled: true
+  - key: event
+    package: "@indiekit/post-type-event"
+    default_enabled: false
+  - key: jam
+    package: "@indiekit/post-type-jam"
+    default_enabled: false
+  - key: rsvp
+    package: "@indiekit/post-type-rsvp"
+    default_enabled: false
+
+syndicators:
+  - key: mastodon
+    package: "@rmdes/indiekit-syndicator-mastodon"
+    version: "^1.0.9"
+    default_enabled: false
+    feature_flag: true
+  - key: bluesky
+    package: "@rmdes/indiekit-syndicator-bluesky"
+    version: "^1.0.21"
+    default_enabled: false
+    feature_flag: true
+  - key: linkedin
+    package: "@rmdes/indiekit-syndicator-linkedin"
+    version: "^1.0.2"
+    default_enabled: false
+    feature_flag: true
+  - key: indienews
+    package: "@rmdes/indiekit-syndicator-indienews"
+    version: "^1.0.1"
+    default_enabled: false
+    feature_flag: true
+
+endpoints:
+  - key: webmention-io
+    package: "@rmdes/indiekit-endpoint-webmention-io"
+    version: "^1.0.8"
+    default_enabled: false
+    feature_flag: true
+  - key: webmention-sender
+    package: "@rmdes/indiekit-endpoint-webmention-sender"
+    version: "^1.0.9"
+    default_enabled: false
+    feature_flag: true
+  - key: comments
+    package: "@rmdes/indiekit-endpoint-comments"
+    version: "^1.0.16"
+    default_enabled: false
+    feature_flag: true
+  - key: blogroll
+    package: "@rmdes/indiekit-endpoint-blogroll"
+    version: "^1.0.24"
+    default_enabled: false
+    feature_flag: true
+  - key: podroll
+    package: "@rmdes/indiekit-endpoint-podroll"
+    version: "^1.0.14"
+    default_enabled: false
+    feature_flag: true
+  - key: rss
+    package: "@rmdes/indiekit-endpoint-rss"
+    version: "^1.0.15"
+    default_enabled: false
+    feature_flag: true
+  - key: microsub
+    package: "@rmdes/indiekit-endpoint-microsub"
+    version: "^1.0.63"
+    default_enabled: false
+    feature_flag: true
+  - key: readlater
+    package: "@rmdes/indiekit-endpoint-readlater"
+    version: "^1.0.6"
+    default_enabled: false
+    feature_flag: true
+  - key: conversations
+    package: "@rmdes/indiekit-endpoint-conversations"
+    version: "^2.4.3"
+    default_enabled: false
+    feature_flag: true
+  - key: activitypub
+    package: "@rmdes/indiekit-endpoint-activitypub"
+    version: "^3.13.6"
+    default_enabled: false
+    feature_flag: true
+  - key: github
+    package: "@rmdes/indiekit-endpoint-github"
+    version: "^1.2.7"
+    default_enabled: false
+    feature_flag: true
+  - key: funkwhale
+    package: "@rmdes/indiekit-endpoint-funkwhale"
+    version: "^1.0.13"
+    default_enabled: false
+    feature_flag: true
+  - key: lastfm
+    package: "@rmdes/indiekit-endpoint-lastfm"
+    version: "^1.0.13"
+    default_enabled: false
+    feature_flag: true
+  - key: youtube
+    package: "@rmdes/indiekit-endpoint-youtube"
+    version: "^1.2.3"
+    default_enabled: false
+    feature_flag: true
+  - key: linkedin
+    package: "@rmdes/indiekit-endpoint-linkedin"
+    version: "^1.0.5"
+    default_enabled: false
+    feature_flag: true
+  - key: cv
+    package: "@rmdes/indiekit-endpoint-cv"
+    version: "^1.0.27"
+    default_enabled: false
+    feature_flag: true
+  - key: donation
+    package: "@rmdes/indiekit-endpoint-donation"
+    version: "^0.1.0"
+    default_enabled: false
+    feature_flag: true
+  - key: bluesky-pds
+    package: "@rmdes/indiekit-endpoint-bluesky-pds"
+    version: "^0.1.0"
+    default_enabled: false
+    feature_flag: true
