@@ -25,6 +25,7 @@ core:
   - key: startup-gate
     package: "@rmdes/indiekit-startup-gate"
     version: "^1.0.0"
+    library: true   # Helper library imported by other plugins; never listed in indiekit.config.js plugins array
   - key: auth
     package: "@indiekit/endpoint-auth"
     overridden: true   # package.json `overrides` swaps in @rmdes/indiekit-endpoint-auth

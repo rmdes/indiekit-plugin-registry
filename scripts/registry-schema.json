@@ -23,6 +23,7 @@
         "package":         { "type": "string", "pattern": "^@[a-z0-9-]+/[a-z0-9-]+$" },
         "version":         { "type": "string" },
         "overridden":      { "type": "boolean" },
+        "library":         { "type": "boolean" },
         "default_enabled": { "type": "boolean" },
         "feature_flag":    { "type": "boolean" }
       }
