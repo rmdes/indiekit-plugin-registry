@@ -52,13 +52,13 @@ core:
     version: "^1.0.0-beta.38"
   - key: store-file-system
     package: "@indiekit/store-file-system"
-    version: "^1.0.0"
+    version: "^1.0.0-beta.27"   # @indiekit/* publishes betas; ^1.0.0 doesn't match prereleases
   - key: post-type-page
     package: "@rmdes/indiekit-post-type-page"
     version: "^1.0.4"
   - key: json-feed
     package: "@indiekit/endpoint-json-feed"
-    version: "^1.0.0"
+    version: "^1.0.0-beta.25"   # @indiekit/* publishes betas; ^1.0.0 doesn't match prereleases
 
 post_types:
   - key: article
