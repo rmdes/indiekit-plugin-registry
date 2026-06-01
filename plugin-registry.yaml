@@ -14,8 +14,8 @@
 #   package          — npm package name (@scope/name)
 #   version          — semver range (omitted when `overridden: true`)
 #   overridden       — package.json `overrides` field swaps this for an @rmdes/* fork
+#   library          — helper library imported by plugins (not a plugin itself; install only)
 #   default_enabled  — whether this is on by default when a site doesn't list it
-#   feature_flag     — whether Site Config's Features tab should expose a toggle
 
 # Core — always installed and loaded; cannot be disabled per-site
 core:
@@ -103,111 +103,89 @@ syndicators:
     package: "@rmdes/indiekit-syndicator-mastodon"
     version: "^1.0.9"
     default_enabled: false
-    feature_flag: true
   - key: bluesky
     package: "@rmdes/indiekit-syndicator-bluesky"
     version: "^1.0.21"
     default_enabled: false
-    feature_flag: true
   - key: linkedin
     package: "@rmdes/indiekit-syndicator-linkedin"
     version: "^1.0.2"
     default_enabled: false
-    feature_flag: true
   - key: indienews
     package: "@rmdes/indiekit-syndicator-indienews"
     version: "^1.0.1"
     default_enabled: false
-    feature_flag: true
 
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
     version: "^1.0.8"
     default_enabled: false
-    feature_flag: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
     version: "^1.0.9"
     default_enabled: false
-    feature_flag: true
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
     version: "^1.0.16"
     default_enabled: false
-    feature_flag: true
   - key: blogroll
     package: "@rmdes/indiekit-endpoint-blogroll"
     version: "^1.0.24"
     default_enabled: false
-    feature_flag: true
   - key: podroll
     package: "@rmdes/indiekit-endpoint-podroll"
     version: "^1.0.14"
     default_enabled: false
-    feature_flag: true
   - key: rss
     package: "@rmdes/indiekit-endpoint-rss"
     version: "^1.0.15"
     default_enabled: false
-    feature_flag: true
   - key: microsub
     package: "@rmdes/indiekit-endpoint-microsub"
     version: "^1.0.63"
     default_enabled: false
-    feature_flag: true
   - key: readlater
     package: "@rmdes/indiekit-endpoint-readlater"
     version: "^1.0.6"
     default_enabled: false
-    feature_flag: true
   - key: conversations
     package: "@rmdes/indiekit-endpoint-conversations"
     version: "^2.4.3"
     default_enabled: false
-    feature_flag: true
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
     version: "^3.13.6"
     default_enabled: false
-    feature_flag: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
     version: "^1.2.7"
     default_enabled: false
-    feature_flag: true
   - key: funkwhale
     package: "@rmdes/indiekit-endpoint-funkwhale"
     version: "^1.0.13"
     default_enabled: false
-    feature_flag: true
   - key: lastfm
     package: "@rmdes/indiekit-endpoint-lastfm"
     version: "^1.0.13"
     default_enabled: false
-    feature_flag: true
   - key: youtube
     package: "@rmdes/indiekit-endpoint-youtube"
     version: "^1.2.3"
     default_enabled: false
-    feature_flag: true
   - key: linkedin-oauth
     package: "@rmdes/indiekit-endpoint-linkedin"
     version: "^1.0.5"
     default_enabled: false
-    feature_flag: true
   - key: cv
     package: "@rmdes/indiekit-endpoint-cv"
     version: "^1.0.27"
     default_enabled: false
-    feature_flag: true
   - key: donation
     package: "@rmdes/indiekit-endpoint-donation"
     version: "^0.1.0"
     default_enabled: false
-    feature_flag: true
   - key: bluesky-pds
     package: "@rmdes/indiekit-endpoint-bluesky-pds"
     version: "^0.1.0"
     default_enabled: false
-    feature_flag: true

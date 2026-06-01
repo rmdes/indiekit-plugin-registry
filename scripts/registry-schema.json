@@ -24,8 +24,7 @@
         "version":         { "type": "string" },
         "overridden":      { "type": "boolean" },
         "library":         { "type": "boolean" },
-        "default_enabled": { "type": "boolean" },
-        "feature_flag":    { "type": "boolean" }
+        "default_enabled": { "type": "boolean" }
       }
     }
   }

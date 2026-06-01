@@ -23,5 +23,7 @@ Shared catalog of Indiekit plugins consumed by `indiekit-cloudron` and `indiekit
 
 1. Add a new entry to the appropriate tier in `plugin-registry.yaml`
 2. Set `default_enabled: false` unless it's truly universal
-3. If it exposes a user toggle, set `feature_flag: true`
+3. If the plugin is a helper library (imported by other plugins, not a plugin
+   itself), set `library: true` so it's installed but not listed in the
+   indiekit.config.js plugins array
 4. Validate, commit, push, update submodule in consumers
