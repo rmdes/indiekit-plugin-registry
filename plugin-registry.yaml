@@ -183,7 +183,7 @@ endpoints:
     default_enabled: false
   - key: donation
     package: "@rmdes/indiekit-endpoint-donation"
-    version: "^0.1.0-alpha.1"   # alpha prerelease; ^0.1.0 doesn't match prereleases
+    version: "^0.1.0-alpha.3"   # alpha.3 fixes layout extends (was layouts/application.njk → document.njk)
     default_enabled: false
   - key: bluesky-pds
     package: "@rmdes/indiekit-endpoint-bluesky-pds"
