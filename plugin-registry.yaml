@@ -21,7 +21,7 @@
 core:
   - key: site-config
     package: "@rmdes/indiekit-endpoint-site-config"
-    version: "^1.0.0-beta.3"
+    version: "^1.0.0-beta.4"
   - key: startup-gate
     package: "@rmdes/indiekit-startup-gate"
     version: "^1.0.0"
