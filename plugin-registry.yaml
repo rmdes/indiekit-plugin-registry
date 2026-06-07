@@ -143,7 +143,7 @@ endpoints:
     default_enabled: false
   - key: microsub
     package: "@rmdes/indiekit-endpoint-microsub"
-    version: "^1.0.64"
+    version: "^1.0.65"
     default_enabled: false
   - key: readlater
     package: "@rmdes/indiekit-endpoint-readlater"
