@@ -1,7 +1,8 @@
 # indiekit-plugin-registry
 #
-# Central catalog of Indiekit plugins consumed by indiekit-cloudron and
-# indiekit-deploy as a git submodule. See README.md for the bump workflow.
+# Central catalog of Indiekit plugins consumed by indiekit-cloudron as a git
+# submodule. See README.md for the bump workflow and schema documentation.
+# (indiekit-deploy integration is planned but not yet implemented.)
 #
 # Tier semantics:
 #   core         — always installed and loaded; cannot be disabled per-site
