@@ -160,11 +160,11 @@ endpoints:
     default_enabled: false
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
-    version: "^1.2.7"
+    version: "^1.2.8"
     default_enabled: false
   - key: funkwhale
     package: "@rmdes/indiekit-endpoint-funkwhale"
-    version: "^1.0.13"
+    version: "^1.0.14"
     default_enabled: false
   - key: lastfm
     package: "@rmdes/indiekit-endpoint-lastfm"
