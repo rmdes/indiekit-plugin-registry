@@ -120,7 +120,7 @@ syndicators:
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
-    version: "^1.0.8"
+    version: "^1.0.9"
     default_enabled: false
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
@@ -128,11 +128,11 @@ endpoints:
     default_enabled: false
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
-    version: "^1.0.16"
+    version: "^1.0.17"
     default_enabled: false
   - key: blogroll
     package: "@rmdes/indiekit-endpoint-blogroll"
-    version: "^1.0.24"
+    version: "^1.0.25"
     default_enabled: false
   - key: podroll
     package: "@rmdes/indiekit-endpoint-podroll"
@@ -156,7 +156,7 @@ endpoints:
     default_enabled: false
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
-    version: "^3.13.8"
+    version: "^3.13.9"
     default_enabled: false
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
