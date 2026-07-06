@@ -156,7 +156,7 @@ endpoints:
     default_enabled: false
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
-    version: "^3.13.14"
+    version: "^3.13.15"
     default_enabled: false
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
