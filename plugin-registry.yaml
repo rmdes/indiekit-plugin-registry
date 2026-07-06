@@ -64,39 +64,51 @@ core:
 post_types:
   - key: article
     package: "@indiekit/post-type-article"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: note
     package: "@indiekit/post-type-note"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: photo
     package: "@indiekit/post-type-photo"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: bookmark
     package: "@indiekit/post-type-bookmark"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: reply
     package: "@indiekit/post-type-reply"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: repost
     package: "@indiekit/post-type-repost"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: like
     package: "@indiekit/post-type-like"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: video
     package: "@indiekit/post-type-video"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: audio
     package: "@indiekit/post-type-audio"
+    version: "^1.0.0-beta.28"
     default_enabled: true
   - key: event
     package: "@indiekit/post-type-event"
+    version: "^1.0.0-beta.28"
     default_enabled: false
   - key: jam
     package: "@indiekit/post-type-jam"
+    version: "^1.0.0-beta.28"
     default_enabled: false
   - key: rsvp
     package: "@indiekit/post-type-rsvp"
+    version: "^1.0.0-beta.28"
     default_enabled: false
 
 syndicators:
