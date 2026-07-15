@@ -168,7 +168,7 @@ endpoints:
     default_enabled: false
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
-    version: "^3.13.27"
+    version: "^3.13.28"
     default_enabled: false
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
