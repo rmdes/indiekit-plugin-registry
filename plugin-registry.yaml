@@ -196,7 +196,7 @@ endpoints:
     default_enabled: false
   - key: donation
     package: "@rmdes/indiekit-endpoint-donation"
-    version: "^0.1.0-alpha.3"   # alpha.3 fixes layout extends (was layouts/application.njk → document.njk)
+    version: "^0.1.0-alpha.4"   # alpha.4: donation-campaign v2 block + public hardened stats API
     default_enabled: false
   - key: bluesky-pds
     package: "@rmdes/indiekit-endpoint-bluesky-pds"
