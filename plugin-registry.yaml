@@ -101,103 +101,103 @@ post_types:
   - key: event
     package: "@indiekit/post-type-event"
     version: "^1.0.0-beta.28"
-    default_enabled: false
+    default_enabled: true
   - key: jam
     package: "@indiekit/post-type-jam"
     version: "^1.0.0-beta.28"
-    default_enabled: false
+    default_enabled: true
   - key: rsvp
     package: "@indiekit/post-type-rsvp"
     version: "^1.0.0-beta.28"
-    default_enabled: false
+    default_enabled: true
 
 syndicators:
   - key: mastodon
     package: "@rmdes/indiekit-syndicator-mastodon"
     version: "^1.0.9"
-    default_enabled: false
+    default_enabled: true
   - key: bluesky
     package: "@rmdes/indiekit-syndicator-bluesky"
     version: "^1.0.21"
-    default_enabled: false
+    default_enabled: true
   - key: linkedin
     package: "@rmdes/indiekit-syndicator-linkedin"
     version: "^1.0.2"
-    default_enabled: false
+    default_enabled: true
   - key: indienews
     package: "@rmdes/indiekit-syndicator-indienews"
     version: "^1.0.1"
-    default_enabled: false
+    default_enabled: true
 
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
     version: "^1.0.9"
-    default_enabled: false
+    default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
     version: "^1.0.9"
-    default_enabled: false
+    default_enabled: true
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
     version: "^1.0.17"
-    default_enabled: false
+    default_enabled: true
   - key: blogroll
     package: "@rmdes/indiekit-endpoint-blogroll"
     version: "^1.0.25"
-    default_enabled: false
+    default_enabled: true
   - key: podroll
     package: "@rmdes/indiekit-endpoint-podroll"
     version: "^1.0.14"
-    default_enabled: false
+    default_enabled: true
   - key: rss
     package: "@rmdes/indiekit-endpoint-rss"
     version: "^1.0.15"
-    default_enabled: false
+    default_enabled: true
   - key: microsub
     package: "@rmdes/indiekit-endpoint-microsub"
     version: "^1.0.67"
-    default_enabled: false
+    default_enabled: true
   - key: readlater
     package: "@rmdes/indiekit-endpoint-readlater"
     version: "^1.0.6"
-    default_enabled: false
+    default_enabled: true
   - key: conversations
     package: "@rmdes/indiekit-endpoint-conversations"
     version: "^2.4.3"
-    default_enabled: false
+    default_enabled: true
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
     version: "^3.13.32"
-    default_enabled: false
+    default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
     version: "^1.2.8"
-    default_enabled: false
+    default_enabled: true
   - key: funkwhale
     package: "@rmdes/indiekit-endpoint-funkwhale"
     version: "^1.0.14"
-    default_enabled: false
+    default_enabled: true
   - key: lastfm
     package: "@rmdes/indiekit-endpoint-lastfm"
     version: "^1.0.13"
-    default_enabled: false
+    default_enabled: true
   - key: youtube
     package: "@rmdes/indiekit-endpoint-youtube"
     version: "^1.2.3"
-    default_enabled: false
+    default_enabled: true
   - key: linkedin-oauth
     package: "@rmdes/indiekit-endpoint-linkedin"
     version: "^1.0.5"
-    default_enabled: false
+    default_enabled: true
   - key: cv
     package: "@rmdes/indiekit-endpoint-cv"
     version: "^1.1.1"
-    default_enabled: false
+    default_enabled: true
   - key: donation
     package: "@rmdes/indiekit-endpoint-donation"
     version: "^0.1.0-alpha.4"   # alpha.4: donation-campaign v2 block + public hardened stats API
-    default_enabled: false
+    default_enabled: true
   - key: bluesky-pds
     package: "@rmdes/indiekit-endpoint-bluesky-pds"
     version: "^0.1.0"
