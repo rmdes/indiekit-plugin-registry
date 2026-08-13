@@ -168,7 +168,12 @@ endpoints:
     default_enabled: true
   - key: activitypub
     package: "@rmdes/indiekit-endpoint-activitypub"
-    version: "^4.0.0"
+    # STAGED TEST of the single-lane core refactor. Exact prerelease pin is
+    # required: ^4.0.0 does NOT match 4.1.0-beta.1, because npm ranges exclude
+    # prereleases unless the range itself carries one.
+    # REVERT: set back to "^4.0.0" — npm `latest` is still 4.0.0, so that is a
+    # pin change with no republish and no data restore.
+    version: "^4.1.0-beta.1"
     default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
