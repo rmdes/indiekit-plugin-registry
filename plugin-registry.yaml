@@ -136,7 +136,7 @@ endpoints:
     default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
-    version: "^1.0.9"
+    version: "^1.1.0"
     default_enabled: true
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
