@@ -140,7 +140,7 @@ endpoints:
     default_enabled: true
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
-    version: "^1.0.17"
+    version: "^1.1.0"
     default_enabled: true
   - key: blogroll
     package: "@rmdes/indiekit-endpoint-blogroll"
