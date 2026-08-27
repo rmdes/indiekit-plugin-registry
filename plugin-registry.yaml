@@ -126,7 +126,7 @@ syndicators:
     default_enabled: true
   - key: indienews
     package: "@rmdes/indiekit-syndicator-indienews"
-    version: "^1.0.2"
+    version: "^1.0.3"
     default_enabled: true
 
 endpoints:
