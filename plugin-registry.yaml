@@ -118,7 +118,7 @@ syndicators:
     default_enabled: true
   - key: bluesky
     package: "@rmdes/indiekit-syndicator-bluesky"
-    version: "^1.0.21"
+    version: "^1.0.23"
     default_enabled: true
   - key: linkedin
     package: "@rmdes/indiekit-syndicator-linkedin"
