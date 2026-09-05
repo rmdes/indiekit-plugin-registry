@@ -152,7 +152,7 @@ endpoints:
     default_enabled: true
   - key: rss
     package: "@rmdes/indiekit-endpoint-rss"
-    version: "^1.1.4"   # 1.1.4: watermark type fix, native notification banners
+    version: "^1.2.0"   # 1.2.0: richer content, post date choice, republish
     default_enabled: true
   - key: microsub
     package: "@rmdes/indiekit-endpoint-microsub"
