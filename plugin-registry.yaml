@@ -50,7 +50,7 @@ core:
     overridden: true
   - key: preset-eleventy
     package: "@rmdes/indiekit-preset-eleventy"
-    version: "^1.0.0-beta.38"
+    version: "^1.0.0-beta.39"
   - key: store-file-system
     package: "@indiekit/store-file-system"
     version: "^1.0.0-beta.27"   # @indiekit/* publishes betas; ^1.0.0 doesn't match prereleases
@@ -114,11 +114,11 @@ post_types:
 syndicators:
   - key: mastodon
     package: "@rmdes/indiekit-syndicator-mastodon"
-    version: "^1.0.9"
+    version: "^1.1.0"
     default_enabled: true
   - key: bluesky
     package: "@rmdes/indiekit-syndicator-bluesky"
-    version: "^1.0.24"
+    version: "^1.1.0"
     default_enabled: true
   - key: linkedin
     package: "@rmdes/indiekit-syndicator-linkedin"
@@ -132,7 +132,7 @@ syndicators:
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
-    version: "^1.0.9"
+    version: "^1.1.0"
     default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
