@@ -56,7 +56,7 @@ core:
     version: "^1.0.0-beta.27"   # @indiekit/* publishes betas; ^1.0.0 doesn't match prereleases
   - key: post-type-page
     package: "@rmdes/indiekit-post-type-page"
-    version: "^1.0.4"
+    version: "^1.0.5"
   - key: json-feed
     package: "@indiekit/endpoint-json-feed"
     version: "^1.0.0-beta.25"   # @indiekit/* publishes betas; ^1.0.0 doesn't match prereleases
@@ -118,7 +118,7 @@ syndicators:
     default_enabled: true
   - key: bluesky
     package: "@rmdes/indiekit-syndicator-bluesky"
-    version: "^1.0.23"
+    version: "^1.0.24"
     default_enabled: true
   - key: linkedin
     package: "@rmdes/indiekit-syndicator-linkedin"
@@ -197,7 +197,7 @@ endpoints:
     default_enabled: true
   - key: cv
     package: "@rmdes/indiekit-endpoint-cv"
-    version: "^1.1.1"
+    version: "^1.1.2"
     default_enabled: true
   - key: donation
     package: "@rmdes/indiekit-endpoint-donation"
