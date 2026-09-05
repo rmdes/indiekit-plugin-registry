@@ -152,7 +152,7 @@ endpoints:
     default_enabled: true
   - key: rss
     package: "@rmdes/indiekit-endpoint-rss"
-    version: "^1.1.3"   # 1.1.3: backfill control, eligible-count feedback
+    version: "^1.1.4"   # 1.1.4: watermark type fix, native notification banners
     default_enabled: true
   - key: microsub
     package: "@rmdes/indiekit-endpoint-microsub"
