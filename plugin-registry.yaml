@@ -132,7 +132,7 @@ syndicators:
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
-    version: "^1.1.1"
+    version: "^1.1.2"  # 1.1.2: normalise blocked domains + keep enforcing the blocklist
     default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
