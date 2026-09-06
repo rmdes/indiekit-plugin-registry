@@ -136,7 +136,7 @@ endpoints:
     default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
-    version: "^1.1.3"
+    version: "^1.1.4"  # 1.1.4: extract targets from the rendered page, not stored content
     default_enabled: true
   - key: comments
     package: "@rmdes/indiekit-endpoint-comments"
