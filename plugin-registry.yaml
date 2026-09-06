@@ -132,7 +132,7 @@ syndicators:
 endpoints:
   - key: webmention-io
     package: "@rmdes/indiekit-endpoint-webmention-io"
-    version: "^1.1.3"  # 1.1.3: normalise domains in hide/unhide/delete, not just at block time
+    version: "^1.2.0"  # 1.2.0: quarantine tier + review queue, blocklist UI on frontend components
     default_enabled: true
   - key: webmention-sender
     package: "@rmdes/indiekit-endpoint-webmention-sender"
