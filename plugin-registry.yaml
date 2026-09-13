@@ -175,7 +175,9 @@ endpoints:
     # REVERT: set back to "^4.0.0" — that release predates the refactor.
     # beta.4 (2026-09-13) = Track A close-out (PR #15). Rolling back only
     # Track A: "^4.1.0-beta.3" (data-compatible — beta.4's migrations are additive).
-    version: "^4.1.0-beta.4"
+    # beta.5 (2026-09-14) = Mastodon API delete federation (PR #16). Roll back
+    # to "^4.1.0-beta.4" (no data changes in beta.5).
+    version: "^4.1.0-beta.5"
     default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
