@@ -173,7 +173,9 @@ endpoints:
     # required: ^4.1.0 does NOT match 4.1.0-beta.2, because npm ranges exclude
     # prereleases unless the range itself carries one.
     # REVERT: set back to "^4.0.0" — that release predates the refactor.
-    version: "^4.1.0-beta.3"
+    # beta.4 (2026-09-13) = Track A close-out (PR #15). Rolling back only
+    # Track A: "^4.1.0-beta.3" (data-compatible — beta.4's migrations are additive).
+    version: "^4.1.0-beta.4"
     default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
