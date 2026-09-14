@@ -177,7 +177,10 @@ endpoints:
     # Track A: "^4.1.0-beta.3" (data-compatible — beta.4's migrations are additive).
     # beta.5 (2026-09-14) = Mastodon API delete federation (PR #16). Roll back
     # to "^4.1.0-beta.4" (no data changes in beta.5).
-    version: "^4.1.0-beta.5"
+    # beta.6 (2026-09-14) = replies to own posts as thread rows, arrival-order
+    # retention, engagement counts (PR #17). Roll back to "^4.1.0-beta.5": the
+    # isContext rows it adds are harmless to beta.5 (feeds exclude isContext).
+    version: "^4.1.0-beta.6"
     default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
