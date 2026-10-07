@@ -41,6 +41,19 @@ core:
     overridden: true
   - key: files
     package: "@indiekit/endpoint-files"
+    # NOT forked any more. @rmdes/indiekit-endpoint-files existed for multi-file
+    # upload; upstream implemented the same feature and then hardened it (it reads
+    # request.session?.access_token with optional chaining where the fork
+    # destructured request.session and threw without one), so the fork had become
+    # a way of NOT receiving fixes to our own contribution. The npm override was
+    # removed from indiekit-cloudron/package.json on 2026-10-07; this now resolves
+    # to plain @indiekit/endpoint-files via @indiekit/indiekit.
+    #
+    # `overridden: true` still describes what the composer must do — skip it as a
+    # direct dep (it arrives transitively) and skip it in the plugins array (core
+    # auto-imports defaults). The entry must NOT be deleted: overridden entries
+    # feed plugin-loadout.json, so removing it would flip the theme's
+    # `loadedPlugins.files` gate to false.
     overridden: true
   - key: share
     package: "@indiekit/endpoint-share"
