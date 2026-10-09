@@ -193,7 +193,15 @@ endpoints:
     # beta.6 (2026-09-14) = replies to own posts as thread rows, arrival-order
     # retention, engagement counts (PR #17). Roll back to "^4.1.0-beta.5": the
     # isContext rows it adds are harmless to beta.5 (feeds exclude isContext).
-    version: "^4.1.0-beta.6"
+    # beta.7 (2026-10-08) = one log line per Fedify record. LOG FORMATTING ONLY,
+    # no schema, no behaviour, no data migration — roll back to "^4.1.0-beta.6"
+    # freely. Fedify logs `logger.error("...{error}", { error })` and LogTape's
+    # default console formatter INSPECTS that error, printing the stack plus
+    # every header of the remote's response: 175 delivery failures over 20h
+    # produced a median of 26 lines each, p90 492, ~29% of all container output.
+    # Rolling back restores that volume and will again bury the Eleventy build
+    # logs in `cloudron logs`.
+    version: "^4.1.0-beta.7"
     default_enabled: true
   - key: github
     package: "@rmdes/indiekit-endpoint-github"
