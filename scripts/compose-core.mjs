@@ -89,7 +89,7 @@ export function composeFromInputs(registry, manifest, basePackageJson, template)
     }
   }
   if (!dependencies["@indiekit/indiekit"]) {
-    dependencies["@indiekit/indiekit"] = "^1.0.0-beta.27";
+    dependencies["@indiekit/indiekit"] = "^1.0.0-beta.30";
   }
 
   const packageJson = {

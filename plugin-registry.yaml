@@ -29,7 +29,12 @@ core:
     library: true   # Helper library imported by other plugins; never listed in indiekit.config.js plugins array
   - key: auth
     package: "@indiekit/endpoint-auth"
-    overridden: true   # package.json `overrides` swaps in @rmdes/indiekit-endpoint-auth
+    # NOT forked any more. @indiekit/endpoint-auth 1.0.0-beta.30 carries
+    # everything @rmdes/indiekit-endpoint-auth did, and more (#1005), so the npm
+    # override was removed on 2026-10-11. Kept as `overridden: true` for the same
+    # reason as files below: it arrives via @indiekit/indiekit and must stay in
+    # plugin-loadout.json.
+    overridden: true
   - key: posts
     package: "@indiekit/endpoint-posts"
     overridden: true
@@ -57,6 +62,10 @@ core:
     overridden: true
   - key: share
     package: "@indiekit/endpoint-share"
+    # NOT forked any more. @indiekit/endpoint-share 1.0.0-beta.30 has the
+    # syndication target checkboxes (#981) that @rmdes/indiekit-endpoint-share
+    # was carrying; the npm override was removed on 2026-10-11. Kept as
+    # `overridden: true` for the same reason as files above.
     overridden: true
   - key: frontend
     package: "@indiekit/frontend"
